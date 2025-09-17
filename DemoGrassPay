@@ -1,1 +1,14 @@
+class Main {
+   public static void main(String[] args) {
+        double rate = 22.75;
+
+        double hours1 = 10.0;
+        double hours2 = 25.0;
+        double hours3 = 37.5;
+
+        System.out.println(hours1 + " hours at $" + rate + " per hour is $" + (hours1 * rate));
+        System.out.println(hours2 + " hours at $" + rate + " per hour is $" + (hours2 * rate));
+        System.out.println(hours3 + " hours at $" + rate + " per hour is $" + (hours3 * rate));
+    }
+}
 
