@@ -10,7 +10,7 @@ public class ForexExchangeSystem {
 
         System.out.println();
 
-        // INPUT SECTION WITH ARROWS (▶▶)
+    
         for (int i = 0; i < currencies.length; i++) {
 
             System.out.println("Currency: " + currencies[i]);
@@ -23,7 +23,7 @@ public class ForexExchangeSystem {
             System.out.println();
         }
 
-        // SUMMARY TABLE
+      
         System.out.println("============== FOREX SUMMARY (Nov 1 - Nov 5) ==============");
         System.out.printf("%-10s | %-6s %-6s %-6s %-6s %-6s %-6s %-6s\n",
                 "Currency", "Nov1", "Nov2", "Nov3", "Nov4", "Nov5", "Peak", "Lowest");
@@ -34,7 +34,7 @@ public class ForexExchangeSystem {
             double peak = rates[i][0];
             double low = rates[i][0];
 
-            // find peak and lowest
+         
             for (int d = 1; d < 5; d++) {
                 if (rates[i][d] > peak) peak = rates[i][d];
                 if (rates[i][d] < low) low = rates[i][d];
@@ -51,7 +51,7 @@ public class ForexExchangeSystem {
 
         System.out.println("------------------------------------------------------------\n");
 
-        // DAILY CHANGES SECTION
+        
         System.out.println("=== DAILY CHANGES (Comparison From Previous Day) ===");
         System.out.println("(+ increase / - decrease / no change for same value)\n");
 
@@ -82,3 +82,4 @@ public class ForexExchangeSystem {
         sc.close();
     }
 }
+
